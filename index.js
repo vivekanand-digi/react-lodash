@@ -60,3 +60,15 @@ let persons = [
 console.log(_.camelCase('Foo Bar')); // ans fooBar
 
 console.log(_.parseInt('08')); // ans 8 
+
+console.log(_.lastIndexOf([1, 2, 1, 2], 2)); // ans 3
+
+let data = ['a', 'b', 'c', 'd'];
+let pulled = _.pullAt(data, [1, 3]);
+
+console.log(data) // ans ['a', 'c']
+console.log(pulled) //ans ['b', 'd']
+
+console.log(_.uniq([2, 1, 2])); // ans  [2, 1]
+console.log(_.without([2, 1, 2, 3], 1, 2)); // ans [3]
+console.log(_.shuffle([1, 2, 3, 4]));  // ans [4, 1, 3, 2]
